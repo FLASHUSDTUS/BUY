@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash USDT - Secure & Fast USDT Flashing Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top, rgba(13, 96, 255, 0.15), transparent 60%);
+        }
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.07);
+            border-color: rgba(13, 96, 255, 0.5);
+        }
+        .faq-item {
+             background-color: rgba(255, 255, 255, 0.03);
+             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+          margin: 0; 
+        }
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        section[id] {
+            scroll-margin-top: 100px; 
+        }
+        /* -- Style for active network button -- */
+        .network-btn.active {
+            background-color: #2563eb; /* blue-600 */
+            color: #ffffff;
+            border-color: #2563eb;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-30 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-500"><path d="M13 3H8.5C7.11929 3 6 4.11929 6 5.5V18.5C6 19.8807 7.11929 21 8.5 21H15.5C16.8807 21 18 19.8807 18 18.5V8M13 3L18 8M13 3V8H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 15.5L8.5 12.5L11.5 9.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <a href="#" class="text-2xl font-bold text-white">Flash<span class="text-blue-500">USDT</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-blue-500 transition-colors">Features</a>
+                    <a href="#buy" class="text-gray-300 hover:text-blue-500 transition-colors">Pricing</a>
+                    <a href="#faq" class="text-gray-300 hover:text-blue-500 transition-colors">FAQ</a>
+                </div>
+                <a href="#buy" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg transition-transform hover:scale-105">Buy Now</a>
+                <button id="mobile-menu-button" class="md:hidden text-white"><i data-lucide="menu"></i></button>
+            </nav>
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#about" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800 rounded">Features</a>
+                <a href="#buy" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800 rounded">Pricing</a>
+                <a href="#faq" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800 rounded">FAQ</a>
+                <a href="#buy" class="block mt-2 text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg">Buy Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Sections: Hero, Features etc. (No changes here) -->
+        <section id="home" class="hero-bg py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Buy Flash USDT | <span class="text-blue-500">Secure & Fast</span> USDT Flashing Service</h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">Looking for a secure and efficient way to transact in the digital asset market? Flash USDT is the perfect solution! Available in both ERC20-USDT and TRC20-USDT formats, our Flash USDT service offers a cost-effective way to move funds seamlessly across blockchain networks.</p>
+                <a href="#buy" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-transform hover:scale-105 inline-block">Get Started</a>
+            </div>
+        </section>
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">Why Choose Flash USDT?</h2><p class="text-gray-400 mt-2">Top-tier security, seamless integration, and unparalleled features.</p></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card p-8 rounded-xl text-center"><div class="bg-blue-500/10 inline-block p-4 rounded-full mb-4"><i data-lucide="shield-check" class="text-blue-400 w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-2">Seamless Flashing Technology</h3><p class="text-gray-400">Flash USDT stays in any wallet for up to 180 days before being automatically rejected by the blockchain network.</p></div>
+                    <div class="feature-card p-8 rounded-xl text-center"><div class="bg-blue-500/10 inline-block p-4 rounded-full mb-4"><i data-lucide="lock" class="text-blue-400 w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-2">Untraceable & Secure</h3><p class="text-gray-400">Transactions remain private and secure on the blockchain.</p></div>
+                    <div class="feature-card p-8 rounded-xl text-center"><div class="bg-blue-500/10 inline-block p-4 rounded-full mb-4"><i data-lucide="clock" class="text-blue-400 w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-2">Automatic Disappearance</h3><p class="text-gray-400">Flash USDT disappears from any wallet 90 days after receipt and from any converted crypto after 90 to 360 days.</p></div>
+                    <div class="feature-card p-8 rounded-xl text-center"><div class="bg-blue-500/10 inline-block p-4 rounded-full mb-4"><i data-lucide="repeat" class="text-blue-400 w-8 h-8"></i></div><h3 class="text-xl font-semibold mb-2">Limited Transfers</h3><p class="text-gray-400">Can only be transferred up to 40 times, ensuring secure usage.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Purchase Section -->
+        <section id="buy" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Pricing & Volume Discounts</h2>
+                    <p class="text-gray-400 mt-2">The more you buy, the more you save. Our tiered discounts are applied automatically.</p>
+                </div>
+                <div class="max-w-2xl mx-auto border-2 border-blue-500/30 bg-blue-500/5 p-6 rounded-xl mb-10 text-center">
+                    <h4 class="text-xl font-bold text-white mb-3">Tiered Bonus Rates</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="font-semibold text-yellow-400">🔥 50% MEGA Bonus</span> for orders over 1,000,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">15% Bonus</span> for orders over 100,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">10% Bonus</span> for orders over 50,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">5% Bonus</span> for orders over 10,000 Flash USDT</li>
+                    </ul>
+                </div>
+
+                <!-- Purchase Form with Calculator -->
+                <div class="max-w-2xl mx-auto bg-gray-900/50 border border-gray-700 p-8 rounded-2xl">
+                    <div id="form-content">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold">Calculate & Place Your Order</h3>
+                            <p class="text-gray-400">Enter the amount of Flash USDT you want to receive.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+                            <div>
+                                <label for="flash-usdt-amount" class="block text-sm font-medium text-gray-300 mb-2">You Receive (Flash USDT)</label>
+                                <div class="relative"><span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">$</span><input id="flash-usdt-amount" type="number" placeholder="e.g., 2000" min="2000" class="w-full bg-gray-800 border border-gray-600 text-white rounded-lg p-3 pl-7 focus:ring-blue-500 focus:border-blue-500 transition-colors"></div>
+                                <p id="amount-error" class="text-red-500 text-sm mt-1 h-5"> </p>
+                            </div>
+                            <div>
+                                <label for="usd-price" class="block text-sm font-medium text-gray-300 mb-2">You Pay (USDT)</label>
+                                <div class="relative"><span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">$</span><input id="usd-price" type="text" readonly placeholder="0.00" class="w-full bg-gray-900 border border-gray-700 text-gray-400 rounded-lg p-3 pl-7 cursor-not-allowed"></div>
+                            </div>
+                        </div>
+                        <p id="discount-message" class="text-center text-yellow-400 font-medium h-5 mb-4"></p>
+                        <div class="mb-6">
+                            <label for="wallet-address" class="block text-sm font-medium text-gray-300 mb-2">Your USDT Wallet Address (TRC-20 or ERC-20)</label>
+                            <input id="wallet-address" type="text" placeholder="Enter your receiving wallet address" class="w-full bg-gray-800 border border-gray-600 text-white rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500">
+                            <p id="wallet-error" class="text-red-500 text-sm mt-1 hidden">Please enter a valid wallet address.</p>
+                        </div>
+                        <button id="payment-button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-transform hover:scale-105 flex items-center justify-center space-x-2 disabled:bg-gray-600 disabled:cursor-not-allowed" disabled><i data-lucide="credit-card"></i><span>Proceed to Payment</span></button>
+                    </div>
+                    
+                    <!-- ===== PAYMENT VIEW (MODIFIED) ===== -->
+                    <div id="payment-details-view" class="hidden">
+                        <div class="text-center mb-6"><h3 class="text-2xl font-bold">To Complete Your Order</h3><p class="text-gray-400">Select network and send the exact amount.</p></div>
+                        <div class="bg-gray-800 p-4 rounded-lg text-center space-y-4">
+                            <div><p class="text-sm text-gray-400">SEND EXACTLY</p><p id="payment-amount" class="text-2xl font-bold text-blue-400">200.00 USDT</p></div>
+                            
+                            <!-- Network Selection Buttons -->
+                            <div class="mb-2">
+                                <p class="text-sm text-gray-400 mb-2">SELECT NETWORK</p>
+                                <div class="inline-flex rounded-lg border border-gray-600 p-1 bg-gray-900">
+                                    <button id="trc20-btn" class="network-btn px-4 py-1.5 text-sm font-semibold rounded-md transition-colors">TRC20</button>
+                                    <button id="erc20-btn" class="network-btn px-4 py-1.5 text-sm font-semibold rounded-md transition-colors">ERC20</button>
+                                </div>
+                            </div>
+
+                            <!-- Address and QR Code -->
+                            <div><p class="text-sm text-gray-400">TO THIS ADDRESS</p><div class="flex items-center justify-center bg-gray-900 p-2 rounded-lg mt-1"><input id="payment-address" readonly class="bg-transparent text-white text-center w-full outline-none" value=""><button id="copy-button" class="ml-2 p-2 hover:bg-gray-700 rounded-lg"><i data-lucide="copy" class="w-5 h-5"></i></button></div></div>
+                            <div class="flex justify-center"><img id="qr-code" src="" alt="QR Code" class="rounded-lg w-40 h-40"></div>
+                            
+                            <!-- Timer -->
+                            <p id="timer-message" class="text-xs text-yellow-500">Awaiting payment... (Order valid for 60 minutes)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section (No changes here) -->
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2></div>
+                <div class="max-w-3xl mx-auto space-y-4" id="faq-container">
+                    <div class="faq-item rounded-lg"><button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold"><span>What is Flash USDT?</span><i data-lucide="chevron-down" class="transition-transform duration-300"></i></button><div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"><p class="p-5 pt-0 text-gray-400">Flash USDT is a special digital asset for developers and traders, available on both ERC20 and TRC20 networks. It's used for fast, large-scale, and anonymous transactions without needing upfront collateral.</p></div></div>
+                    <div class="faq-item rounded-lg"><button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold"><span>How long does Flash USDT last?</span><i data-lucide="chevron-down" class="transition-transform duration-300"></i></button><div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"><p class="p-5 pt-0 text-gray-400">Flash USDT is designed for temporary use. It stays visible in any compatible wallet for up to 180 days and will automatically disappear 90 days after receipt or after being converted to another crypto.</p></div></div>
+                    <div class="faq-item rounded-lg"><button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold"><span>Is this platform secure?</span><i data-lucide="chevron-down" class="transition-transform duration-300"></i></button><div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"><p class="p-5 pt-0 text-gray-400">Yes, security is our top priority. We use industry-standard encryption to protect transactions. However, always ensure you are using a secure internet connection and protecting your personal wallet keys.</p></div></div>
+                    <div class="faq-item rounded-lg"><button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold"><span>What wallets are compatible?</span><i data-lucide="chevron-down" class="transition-transform duration-300"></i></button><div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"><p class="p-5 pt-0 text-gray-400">Flash USDT works with any wallet that supports ERC-20 (Ethereum) or TRC-20 (Tron) tokens. This includes Trust Wallet, MetaMask, Ledger, and many others.</p></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/50 py-10">
+        <div class="container mx-auto px-6 text-center text-gray-500"><p>&copy; 2025 FlashUSDT. All Rights Reserved.</p><p class="text-xs mt-2">Disclaimer: Flash USDT is a conceptual project for demonstration and specific use-cases and and is not an officially recognized financial instrument.</p></div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        // FAQ Accordion
+        const faqContainer = document.getElementById('faq-container');
+        faqContainer.addEventListener('click', (e) => {
+            const questionButton = e.target.closest('.faq-question');
+            if (!questionButton) return;
+            const answer = questionButton.nextElementSibling;
+            const isOpen = answer.style.maxHeight;
+            faqContainer.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = null);
+            faqContainer.querySelectorAll('.faq-question svg').forEach(ic => ic.style.transform = 'rotate(0deg)');
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                questionButton.querySelector('svg').style.transform = 'rotate(180deg)';
+            }
+        });
+        
+        // --- PAYMENT AND CALCULATOR LOGIC (MODIFIED) ---
+
+        // ==========================================================
+        //         !! العناوين جاهزة الآن !!
+        // ==========================================================
+        const networkData = {
+            trc20: {
+                address: "TVoPX2DRoFGngZRh7UxiRTQWAwDtTqWJQJ",
+                qrCode: "qr-trc20.png"
+            },
+            erc20: {
+                address: "0x1B66f9093B93Db745ca4106a9a40Db7ca6e6bc65",
+                qrCode: "qr-erc20.png"
+            }
+        };
+        // ==========================================================
+
+        const flashUsdtInput = document.getElementById('flash-usdt-amount');
+        const usdPriceInput = document.getElementById('usd-price');
+        const amountError = document.getElementById('amount-error');
+        const discountMessage = document.getElementById('discount-message');
+        const walletInput = document.getElementById('wallet-address');
+        const walletError = document.getElementById('wallet-error');
+        const paymentButton = document.getElementById('payment-button');
+        const formContent = document.getElementById('form-content');
+        
+        // Payment View Elements
+        const paymentDetailsView = document.getElementById('payment-details-view');
+        const paymentAmount = document.getElementById('payment-amount');
+        const copyButton = document.getElementById('copy-button');
+        const paymentAddress = document.getElementById('payment-address');
+        const timerMessage = document.getElementById('timer-message');
+        const qrCodeImg = document.getElementById('qr-code');
+        const trc20Button = document.getElementById('trc20-btn');
+        const erc20Button = document.getElementById('erc20-btn');
+        
+        let countdownInterval;
+        const MIN_FLASH_AMOUNT = 2000;
+
+        // Function to update payment details based on selected network
+        function selectNetwork(network) {
+            if (network === 'trc20') {
+                paymentAddress.value = networkData.trc20.address;
+                qrCodeImg.src = networkData.trc20.qrCode;
+                trc20Button.classList.add('active');
+                erc20Button.classList.remove('active');
+            } else { // erc20
+                paymentAddress.value = networkData.erc20.address;
+                qrCodeImg.src = networkData.erc20.qrCode;
+                erc20Button.classList.add('active');
+                trc20Button.classList.remove('active');
+            }
+        }
+
+        // Add event listeners for network buttons
+        trc20Button.addEventListener('click', () => selectNetwork('trc20'));
+        erc20Button.addEventListener('click', () => selectNetwork('erc20'));
+
+        function startTimer(durationInSeconds, displayElement) {
+            let timer = durationInSeconds;
+            let minutes, seconds;
+            clearInterval(countdownInterval);
+            countdownInterval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                displayElement.textContent = `Awaiting payment... (Order expires in ${minutes}:${seconds})`;
+                displayElement.classList.remove('text-red-500');
+                displayElement.classList.add('text-yellow-500');
+                if (--timer < 0) {
+                    clearInterval(countdownInterval);
+                    displayElement.textContent = "Order has expired.";
+                    displayElement.classList.remove('text-yellow-500');
+                    displayElement.classList.add('text-red-500');
+                }
+            }, 1000);
+        }
+
+        flashUsdtInput.addEventListener('input', () => {
+            const flashAmount = parseFloat(flashUsdtInput.value);
+            usdPriceInput.value = "0.00";
+            discountMessage.textContent = '';
+            amountError.textContent = ' ';
+            paymentButton.disabled = true;
+            if (isNaN(flashAmount) || flashAmount <= 0) return;
+            let usdCost = 0;
+            let bonusMsg = "";
+            if (flashAmount >= 1000000) { usdCost = flashAmount / 15.0; bonusMsg = "🔥 50% MEGA Bonus Applied!"; } 
+            else if (flashAmount >= 100000) { usdCost = flashAmount / 11.5; bonusMsg = "15% Bonus Rate Applied!"; } 
+            else if (flashAmount >= 50000) { usdCost = flashAmount / 11.0; bonusMsg = "10% Bonus Rate Applied!"; } 
+            else if (flashAmount >= 10000) { usdCost = flashAmount / 10.5; bonusMsg = "5% Bonus Rate Applied!"; } 
+            else { usdCost = flashAmount / 10.0; }
+            usdPriceInput.value = usdCost.toFixed(2);
+            discountMessage.textContent = bonusMsg;
+            if (bonusMsg.includes('MEGA')) {
+                 discountMessage.classList.remove('text-green-400');
+                 discountMessage.classList.add('text-yellow-400');
+            } else {
+                 discountMessage.classList.remove('text-yellow-400');
+                 discountMessage.classList.add('text-green-400');
+            }
+            if (flashAmount < MIN_FLASH_AMOUNT) {
+                amountError.textContent = `Minimum amount is ${MIN_FLASH_AMOUNT} Flash USDT.`;
+            } else {
+                paymentButton.disabled = false;
+            }
+        });
+
+        paymentButton.addEventListener('click', () => {
+            const walletValue = walletInput.value.trim();
+            const flashAmount = parseFloat(flashUsdtInput.value);
+            let isWalletValid = true, isAmountValid = true;
+            if (walletValue === '' || walletValue.length < 26) {
+                walletInput.classList.add('border-red-500');
+                walletError.classList.remove('hidden');
+                isWalletValid = false;
+            } else {
+                walletInput.classList.remove('border-red-500');
+                walletError.classList.add('hidden');
+            }
+            if (isNaN(flashAmount) || flashAmount < MIN_FLASH_AMOUNT) isAmountValid = false;
+            if (isWalletValid && isAmountValid) {
+                paymentAmount.innerText = `${usdPriceInput.value} USDT`;
+                formContent.classList.add('hidden');
+                paymentDetailsView.classList.remove('hidden');
+                
+                // Set default network to TRC20 and start timer
+                selectNetwork('trc20');
+                const sixtyMinutes = 60 * 60;
+                startTimer(sixtyMinutes, timerMessage);
+
+                lucide.createIcons(); 
+            }
+        });
+        
+        copyButton.addEventListener('click', () => {
+            paymentAddress.select();
+            document.execCommand('copy');
+            const originalIcon = copyButton.innerHTML;
+            copyButton.innerHTML = '<i data-lucide="check" class="w-5 h-5 text-green-500"></i>';
+            lucide.createIcons();
+            setTimeout(() => { copyButton.innerHTML = originalIcon; lucide.createIcons(); }, 2000);
+        });
+    </script>
+</body>
+</html>
