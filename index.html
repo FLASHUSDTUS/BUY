@@ -121,7 +121,6 @@
                     <p class="text-gray-400 mt-2">The more you buy, the more you save. Our tiered discounts are applied automatically.</p>
                 </div>
                 
-                <!-- ===== TIERED RATES (MODIFIED) ===== -->
                 <div class="max-w-2xl mx-auto border-2 border-blue-500/30 bg-blue-500/5 p-6 rounded-xl mb-10 text-center">
                     <h4 class="text-xl font-bold text-white mb-3">Tiered Bonus Rates</h4>
                     <ul class="text-gray-300 space-y-1">
@@ -142,7 +141,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
                             <div>
                                 <label for="flash-usdt-amount" class="block text-sm font-medium text-gray-300 mb-2">You Receive (Flash USDT)</label>
-                                <div class="relative"><span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">$</span><input id="flash-usdt-amount" type="number" placeholder="e.g., 2000" min="2000" class="w-full bg-gray-800 border border-gray-600 text-white rounded-lg p-3 pl-7 focus:ring-blue-500 focus:border-blue-500 transition-colors"></div>
+                                <div class="relative"><span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">$</span><input id="flash-usdt-amount" type="number" placeholder="e.g., 8000" min="8000" class="w-full bg-gray-800 border border-gray-600 text-white rounded-lg p-3 pl-7 focus:ring-blue-500 focus:border-blue-500 transition-colors"></div>
                                 <p id="amount-error" class="text-red-500 text-sm mt-1 h-5"> </p>
                             </div>
                             <div>
@@ -253,7 +252,7 @@
         const erc20Button = document.getElementById('erc20-btn');
         
         let countdownInterval;
-        const MIN_FLASH_AMOUNT = 2000;
+        const MIN_FLASH_AMOUNT = 8000; // Updated minimum amount
 
         function selectNetwork(network) {
             if (network === 'trc20') {
@@ -304,21 +303,21 @@
             let usdCost = 0;
             let bonusMsg = "";
             
-            // ===== PRICING LOGIC (HIGHER RATES) =====
+            // ===== PRICING LOGIC (DOUBLED AGAIN) =====
             if (flashAmount >= 1000000) {
-                usdCost = flashAmount / 18.0; // 80% Bonus
+                usdCost = flashAmount / 72.0; // Effective rate for 80% Bonus (40 * 1.8)
                 bonusMsg = "🔥 80% MEGA Bonus Applied!";
             } else if (flashAmount >= 100000) {
-                usdCost = flashAmount / 14.0; // 40% Bonus
+                usdCost = flashAmount / 56.0; // Effective rate for 40% Bonus (40 * 1.4)
                 bonusMsg = "40% Bonus Rate Applied!";
             } else if (flashAmount >= 50000) {
-                usdCost = flashAmount / 12.5; // 25% Bonus
+                usdCost = flashAmount / 50.0; // Effective rate for 25% Bonus (40 * 1.25)
                 bonusMsg = "25% Bonus Rate Applied!";
             } else if (flashAmount >= 10000) {
-                usdCost = flashAmount / 12.0; // 20% Bonus
+                usdCost = flashAmount / 48.0; // Effective rate for 20% Bonus (40 * 1.2)
                 bonusMsg = "20% Bonus Rate Applied!";
             } else {
-                usdCost = flashAmount / 10.0; // Standard Rate
+                usdCost = flashAmount / 40.0; // New Standard Rate (1 USDT = 40 Flash USDT)
             }
             
             usdPriceInput.value = usdCost.toFixed(2);
