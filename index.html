@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash USDT - Secure & Fast USDT Flashing Service</title>
 
-    <!-- ===== META TAGS WITH CORRECT URL ===== -->
-    <!-- Primary Meta Tags -->
+    <!-- Meta Tags -->
     <meta name="description" content="Secure and fast Flash USDT service. Purchase ERC20-USDT and TRC20-USDT for seamless and private transactions across blockchain networks.">
     <meta name="keywords" content="Flash USDT, USDT Flashing, ERC20, TRC20, Crypto, Blockchain, Secure Transactions">
     <meta name="author" content="FlashUSDT">
-
-    <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://flashusdtus.github.io/BUY/">
+    <meta property="og:url" content="https://your-website-url.com/">
     <meta property="og:title" content="Flash USDT - Secure & Fast USDT Flashing Service">
     <meta property="og:description" content="Purchase ERC20 & TRC20 Flash USDT for seamless and private transactions. Tiered discounts and bonuses available.">
-    <meta property="og:image" content="https://flashusdtus.github.io/BUY/social-preview.png">
-
-    <!-- Twitter Meta Tags -->
+    <meta property="og:image" content="https://your-website-url.com/social-preview.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://flashusdtus.github.io/BUY/">
+    <meta name="twitter:url" content="https://your-website-url.com/">
     <meta name="twitter:title" content="Flash USDT - Secure & Fast USDT Flashing Service">
     <meta name="twitter:description" content="Purchase ERC20 & TRC20 Flash USDT for seamless and private transactions. Tiered discounts and bonuses available.">
-    <meta name="twitter:image" content="https://flashusdtus.github.io/BUY/social-preview.png">
-
-    <!-- Theme Color for Browsers -->
+    <meta name="twitter:image" content="https://your-website-url.com/social-preview.png">
     <meta name="theme-color" content="#2563eb">
-    <!-- ===== META TAGS END ===== -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -66,9 +58,8 @@
         section[id] {
             scroll-margin-top: 100px; 
         }
-        /* -- Style for active network button -- */
         .network-btn.active {
-            background-color: #2563eb; /* blue-600 */
+            background-color: #2563eb;
             color: #ffffff;
             border-color: #2563eb;
         }
@@ -102,7 +93,7 @@
     </header>
 
     <main class="pt-24">
-        <!-- Sections: Hero, Features etc. (No changes here) -->
+        <!-- Sections: Hero, Features etc. -->
         <section id="home" class="hero-bg py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Buy Flash USDT | <span class="text-blue-500">Secure & Fast</span> USDT Flashing Service</h1>
@@ -129,13 +120,15 @@
                     <h2 class="text-3xl md:text-4xl font-bold">Pricing & Volume Discounts</h2>
                     <p class="text-gray-400 mt-2">The more you buy, the more you save. Our tiered discounts are applied automatically.</p>
                 </div>
+                
+                <!-- ===== TIERED RATES (MODIFIED) ===== -->
                 <div class="max-w-2xl mx-auto border-2 border-blue-500/30 bg-blue-500/5 p-6 rounded-xl mb-10 text-center">
                     <h4 class="text-xl font-bold text-white mb-3">Tiered Bonus Rates</h4>
                     <ul class="text-gray-300 space-y-1">
-                        <li><span class="font-semibold text-yellow-400">🔥 50% MEGA Bonus</span> for orders over 1,000,000 Flash USDT</li>
-                        <li><span class="font-semibold text-green-400">15% Bonus</span> for orders over 100,000 Flash USDT</li>
-                        <li><span class="font-semibold text-green-400">10% Bonus</span> for orders over 50,000 Flash USDT</li>
-                        <li><span class="font-semibold text-green-400">5% Bonus</span> for orders over 10,000 Flash USDT</li>
+                        <li><span class="font-semibold text-yellow-400">🔥 80% MEGA Bonus</span> for orders over 1,000,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">40% Bonus</span> for orders over 100,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">25% Bonus</span> for orders over 50,000 Flash USDT</li>
+                        <li><span class="font-semibold text-green-400">20% Bonus</span> for orders over 10,000 Flash USDT</li>
                     </ul>
                 </div>
 
@@ -166,13 +159,10 @@
                         <button id="payment-button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-transform hover:scale-105 flex items-center justify-center space-x-2 disabled:bg-gray-600 disabled:cursor-not-allowed" disabled><i data-lucide="credit-card"></i><span>Proceed to Payment</span></button>
                     </div>
                     
-                    <!-- ===== PAYMENT VIEW (MODIFIED) ===== -->
                     <div id="payment-details-view" class="hidden">
                         <div class="text-center mb-6"><h3 class="text-2xl font-bold">To Complete Your Order</h3><p class="text-gray-400">Select network and send the exact amount.</p></div>
                         <div class="bg-gray-800 p-4 rounded-lg text-center space-y-4">
                             <div><p class="text-sm text-gray-400">SEND EXACTLY</p><p id="payment-amount" class="text-2xl font-bold text-blue-400">200.00 USDT</p></div>
-                            
-                            <!-- Network Selection Buttons -->
                             <div class="mb-2">
                                 <p class="text-sm text-gray-400 mb-2">SELECT NETWORK</p>
                                 <div class="inline-flex rounded-lg border border-gray-600 p-1 bg-gray-900">
@@ -180,12 +170,8 @@
                                     <button id="erc20-btn" class="network-btn px-4 py-1.5 text-sm font-semibold rounded-md transition-colors">ERC20</button>
                                 </div>
                             </div>
-
-                            <!-- Address and QR Code -->
                             <div><p class="text-sm text-gray-400">TO THIS ADDRESS</p><div class="flex items-center justify-center bg-gray-900 p-2 rounded-lg mt-1"><input id="payment-address" readonly class="bg-transparent text-white text-center w-full outline-none" value=""><button id="copy-button" class="ml-2 p-2 hover:bg-gray-700 rounded-lg"><i data-lucide="copy" class="w-5 h-5"></i></button></div></div>
                             <div class="flex justify-center"><img id="qr-code" src="" alt="QR Code" class="rounded-lg w-40 h-40"></div>
-                            
-                            <!-- Timer -->
                             <p id="timer-message" class="text-xs text-yellow-500">Awaiting payment... (Order valid for 60 minutes)</p>
                         </div>
                     </div>
@@ -193,7 +179,7 @@
             </div>
         </section>
         
-        <!-- FAQ Section (No changes here) -->
+        <!-- FAQ Section -->
         <section id="faq" class="py-20">
             <div class="container mx-auto px-6">
                  <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2></div>
@@ -257,7 +243,6 @@
         const paymentButton = document.getElementById('payment-button');
         const formContent = document.getElementById('form-content');
         
-        // Payment View Elements
         const paymentDetailsView = document.getElementById('payment-details-view');
         const paymentAmount = document.getElementById('payment-amount');
         const copyButton = document.getElementById('copy-button');
@@ -270,7 +255,6 @@
         let countdownInterval;
         const MIN_FLASH_AMOUNT = 2000;
 
-        // Function to update payment details based on selected network
         function selectNetwork(network) {
             if (network === 'trc20') {
                 paymentAddress.value = networkData.trc20.address;
@@ -285,7 +269,6 @@
             }
         }
 
-        // Add event listeners for network buttons
         trc20Button.addEventListener('click', () => selectNetwork('trc20'));
         erc20Button.addEventListener('click', () => selectNetwork('erc20'));
 
@@ -317,22 +300,37 @@
             amountError.textContent = ' ';
             paymentButton.disabled = true;
             if (isNaN(flashAmount) || flashAmount <= 0) return;
+            
             let usdCost = 0;
             let bonusMsg = "";
-            if (flashAmount >= 1000000) { usdCost = flashAmount / 15.0; bonusMsg = "🔥 50% MEGA Bonus Applied!"; } 
-            else if (flashAmount >= 100000) { usdCost = flashAmount / 11.5; bonusMsg = "15% Bonus Rate Applied!"; } 
-            else if (flashAmount >= 50000) { usdCost = flashAmount / 11.0; bonusMsg = "10% Bonus Rate Applied!"; } 
-            else if (flashAmount >= 10000) { usdCost = flashAmount / 10.5; bonusMsg = "5% Bonus Rate Applied!"; } 
-            else { usdCost = flashAmount / 10.0; }
+            
+            // ===== PRICING LOGIC (HIGHER RATES) =====
+            if (flashAmount >= 1000000) {
+                usdCost = flashAmount / 18.0; // 80% Bonus
+                bonusMsg = "🔥 80% MEGA Bonus Applied!";
+            } else if (flashAmount >= 100000) {
+                usdCost = flashAmount / 14.0; // 40% Bonus
+                bonusMsg = "40% Bonus Rate Applied!";
+            } else if (flashAmount >= 50000) {
+                usdCost = flashAmount / 12.5; // 25% Bonus
+                bonusMsg = "25% Bonus Rate Applied!";
+            } else if (flashAmount >= 10000) {
+                usdCost = flashAmount / 12.0; // 20% Bonus
+                bonusMsg = "20% Bonus Rate Applied!";
+            } else {
+                usdCost = flashAmount / 10.0; // Standard Rate
+            }
+            
             usdPriceInput.value = usdCost.toFixed(2);
             discountMessage.textContent = bonusMsg;
             if (bonusMsg.includes('MEGA')) {
                  discountMessage.classList.remove('text-green-400');
                  discountMessage.classList.add('text-yellow-400');
-            } else {
+            } else if (bonusMsg) {
                  discountMessage.classList.remove('text-yellow-400');
                  discountMessage.classList.add('text-green-400');
             }
+
             if (flashAmount < MIN_FLASH_AMOUNT) {
                 amountError.textContent = `Minimum amount is ${MIN_FLASH_AMOUNT} Flash USDT.`;
             } else {
@@ -358,7 +356,6 @@
                 formContent.classList.add('hidden');
                 paymentDetailsView.classList.remove('hidden');
                 
-                // Set default network to TRC20 and start timer
                 selectNetwork('trc20');
                 const sixtyMinutes = 60 * 60;
                 startTimer(sixtyMinutes, timerMessage);
@@ -377,4 +374,4 @@
         });
     </script>
 </body>
-</html>```
+</html>
